@@ -17,7 +17,9 @@ Não misturar outros vídeos, histórico da conversa nem funcionamento das ferra
 
 ## Instalação em outro computador
 
-`git clone` + `INSTALAR.bat` (Python, .venv, dependências, chave, checagem do Claude Code) — ver README.md.
+Se pedirem para instalar ou configurar este projeto num PC: siga a seção "Passo a passo para o Claude" do README.md
+(clone, Python, .venv, dependências, Claude Code no terminal, chave da AssemblyAI, `CLAUDE.local.md` a partir do
+`CLAUDE.local.exemplo.md`, teste de ponta a ponta). Sem o Claude: `git clone` + `INSTALAR.bat`.
 `chave_assemblyai.txt`, `CLAUDE.local.md`, `videos/` e `analises/` não vão para o git (.gitignore).
 A transcrição local é opcional (`requirements-local.txt`).
 
@@ -85,7 +87,7 @@ Se a API falhar (chave inválida, sem crédito, sem internet), cai sozinho para 
 
 ## Transcrição local (reserva; via transformers + PyTorch CUDA, na GPU)
 
-(Notas abaixo são do notebook pessoal; em outro PC, conferir se `requirements-local.txt` foi instalado.)
+(Notas abaixo são do PC de quem criou o projeto; em outro PC, conferir se `requirements-local.txt` foi instalado.)
 Lenta neste notebook: a GPU MX550 fica limitada pelo Windows (SW Power Cap / SW Thermal, 300 de 2100 MHz),
 então 20 min de vídeo levaram ~1h40. As janelas vão uma por vez (todas juntas lotavam os 2 GB e travavam)
 e o texto é salvo aos poucos em `transcricao_parcial.md`.
@@ -103,9 +105,10 @@ Velocidade medida (modelo `small`, GPU): 3min07 de vídeo em 106s (~0,6x) → v�
 sempre rodar em background (CPU era ~1,6x).
 Mais rápido com `--modelo base` (erra mais palavras).
 
-## Complemento: plugin "watch" (github.com/bradautomates/claude-video) — instalado
+## Complemento opcional: plugin "watch" (github.com/bradautomates/claude-video)
 
-Instalado em 2026-10-29 (escopo de usuário, v0.3.2), configurado `--engine local --backend none`
+Não faz parte da instalação; confira se existe neste PC antes de usar. No PC de quem criou o projeto:
+instalado em 2026-10-29 (escopo de usuário, v0.3.2), configurado `--engine local --backend none`
 (nunca envia vídeo ao Google; fala vem das legendas nativas do site). Dependências via winget: ffmpeg, yt-dlp, Deno.
 
 Quando usar cada um:

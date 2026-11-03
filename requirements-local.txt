@@ -1,0 +1,7 @@
+# Opcional: transcrição no próprio PC (reserva, se a AssemblyAI falhar). ~1-3 GB de download.
+# Instale com:  .venv\Scripts\python.exe -m pip install -r requirements-local.txt
+# Com placa NVIDIA, troque o índice abaixo por https://download.pytorch.org/whl/cu132 (bem mais rápido).
+transformers
+accelerate
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch

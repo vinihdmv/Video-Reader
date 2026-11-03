@@ -1,0 +1,15 @@
+# Ambiente Python (recriado pelo INSTALAR.bat)
+.venv/
+__pycache__/
+
+# Vídeos e resultados: ficam só na máquina (pesados e com conteúdo de reuniões)
+videos/*
+!videos/.gitkeep
+analises/
+*.mp4
+
+# Chave da API: NUNCA subir (o INSTALAR.bat cria este arquivo a partir do .exemplo)
+chave_assemblyai.txt
+
+# Contexto pessoal (nomes, clientes, ambientes): cada pessoa tem o seu, só na máquina
+CLAUDE.local.md

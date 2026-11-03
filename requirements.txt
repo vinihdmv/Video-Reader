@@ -1,0 +1,4 @@
+﻿# Essencial: telas, mosaicos e transcrição pela AssemblyAI (nuvem)
+imageio-ffmpeg
+numpy
+pillow

@@ -1,0 +1,4 @@
+# Cole a sua chave da AssemblyAI na linha de baixo (só a chave, sem aspas) e salve.
+# Pegue em: https://www.assemblyai.com/dashboard  (menu "API Keys")
+# Sem chave aqui, a transcrição é feita no próprio PC (bem mais lenta).
+
